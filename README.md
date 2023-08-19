@@ -1,6 +1,17 @@
-# Responsive social media template
+# Projeto rede social Senac
 
-##### A website template is similar to Twitter. . It employs the use of Html, CSS, Bootstrap, and Javascript to build it.
+Projeto desenvolvido na disciplina Mobile do curso de Análise de Desenvolvimento de Sistemas da Faculdade Senac/PE.
+
+## Objetivo
+
+Desenvolver uma rede social em que alunos e professores possam interagir e compartilhar experiências, dicas e propostas de trabalho.
+
+## Tecnologias utilizada
+
+1. HTML
+2. CSS (Bootstrap)
+3. Javascript
+4. PWA (Em breve)
 
 
-👉🏻 [Demo](https://shohan-ch.github.io/social-network-template/)
+👉🏻 [Demo](https://renanleitev.github.io/atividade-01-senac/)
