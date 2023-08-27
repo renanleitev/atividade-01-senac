@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="lightbox.min.css">
     <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
     <!------------------LIght BOx for Gallery-------------->
-    <title>Application-1</title>
+    <meta name="description" content="Página principal do site MySenac">
+    <title>MySenac</title>
 </head>
 
 <body>
@@ -22,19 +23,22 @@
             <img src="img/senac-logo-1-1.png" alt="logo" class="img-fluid" width="80px" height="100px"
                 style="background-color:white">
         </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive" style="background-color:rgb(0, 63, 123)">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#responsive"
+            style="background-color:rgb(0, 63, 123)" aria-label="Menu">
+            <span class="navbar-toggler-icon" role="button" aria-label="Menu"></span>
         </button>
         <div class="collapse navbar-collapse" id="responsive">
             <ul class="navbar-nav mr-auto text-capitalize">
                 <li class="nav-item"><a href="index.html" class="text-dark nav-link active">home</a></li>
                 <li class="nav-item"><a href="profile.html" class="text-dark nav-link">perfil</a></li>
-                <li class="nav-item"><a href="#modalview" class="text-dark nav-link" data-toggle="modal">mensagens</a></li>
-                <li class="nav-item"><a href="notification.html" class="text-dark nav-link">documentos</a></li>
+                <li class="nav-item"><a href="#modalview" class="text-dark nav-link" data-toggle="modal">mensagens</a>
+                </li>
+                <li class="nav-item"><a href="notification.html" class="text-dark nav-link">Notificações</a></li>
                 <li class="nav-item"><a href="#" class="text-dark nav-link d-md-none">logout</a></li>
             </ul>
             <form action="" class="form-inline ml-auto d-none d-md-block">
-                <input type="text" name="search" id="search" placeholder="Pesquisar" class="form-control form-control-sm">
+                <input type="text" name="search" id="search" placeholder="Pesquisar"
+                    class="form-control form-control-sm">
             </form>
             <a href="notification.html" class="text-decoration-none" style="font-size:22px;"><i
                     class="far fa-bell ml-3 d-none d-md-block"></i></a>
@@ -49,7 +53,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title h4">Mensagens</div>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Mensagens">&times;</button>
                 </div>
                 <div class="modal-body">
                     <ul class="list-unstyled">
@@ -163,56 +167,79 @@
             <!--------------------------left columns  start-->
             <div class="col-12 col-lg-3">
                 <div class="left-column">
-                    <div class="card card-left1 mb-4">
-                        <img src="img/photo-1455448972184-de647495d428.jpg" alt="" class="card-img-top img-fluid">
-                        <div class="card-body text-center ">
-                            <img src="img/avatar-dhg.jpeg" alt="img" width="120px" height="120px"
-                                class="rounded-circle mt-n5">
-                            <h5 class="card-title">Renan Leite</h5>
-                            <p class="card-text mb-2">Estagiário Front-End</p>
-                            <ul class="list-unstyled nav justify-content-center">
-                                <a href="#" class="text-dark text-decoration-none">
-                                    <li class="nav-item">Amizades <br> <strong><a href="#">12</a></strong></li>
-                                </a>
-                            </ul>
-                        </div>
+                    <div class="d-flex justify-content-center">
+                        <p>
+                            <button class="btn btn-primary d-flex flex-row" type="button" data-toggle="collapse"
+                                data-target="#infoProfile" aria-expanded="false" aria-controls="infoProfile" aria-label="Perfil">
+                                Perfil de Renan Leite
+                            </button>
+                        </p>
                     </div>
-                    <div class="card shadow-sm card-left2 mb-4">
-                        <div class="card-body">
-                            <h5 class="mb-3 card-title">Sobre <small><a href="#" class="ml-1">Editar</a></small></h5>
-                            <p class="card-text"> <i class="fas fa-calendar-week mr-2"></i> 
-                                <a href="#" class="text-decoration-none">Última postagem</a></p>
-                            <p class="card-text"> 
-                                <i class="fas fa-user-friends mr-2"></i> 
-                                Fez amizade com 
-                                <a href="#" class="text-decoration-none">Fulano</a>, 
-                                <a href="#" class="text-decoration-none">Beltrano</a>, ...
-                            </p>
-                            <p class="card-text"> <i class="far fa-building mr-2"></i><a href="#"
-                                    class="text-decoration-none">Estagiário Front-end</a></p>
-                            <p class="card-text"> <i class="fas fa-home mr-2"></i> Mora em <a href="#"
-                                    class="text-decoration-none">Recife</a></p>
+                    <div class="collapse" id="infoProfile">
+                        <div class="card card-left1 mb-4">
+                            <img src="img/photo-1455448972184-de647495d428.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body text-center ">
+                                <img src="img/avatar-dhg.jpeg" alt="img" width="120px" height="120px"
+                                    class="rounded-circle mt-n5">
+                                <h5 class="card-title">Renan Leite</h5>
+                                <p class="card-text mb-2">Estagiário Front-End</p>
+                                <ul class="list-unstyled nav justify-content-center">
+                                        <li class="nav-item">Amizades <br> <strong><a href="#">12</a></strong></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card shadow-sm card-left3 mb-4">
-                        <div class="card-body">
-                            <h5 class="card-title">Imagens<small class="ml-2"><a href="#">Editar </a></small></h5>
-                            <div class="row">
-                                <div class="col-6 p-1">
-                                    <a href="img/left1.jpg" data-lightbox="id"><img src="img/left1.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
-                                    <a href="img/left2.jpg" data-lightbox="id"><img src="img/left2.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
-                                    <a href="img/left3.jpg" data-lightbox="id"><img src="img/left3.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
-                                </div>
-                                <div class="col-6 p-1">
-                                    <a href="img/left4.jpg" data-lightbox="id"><img src="img/left4.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
-                                    <a href="img/left5.jpg" data-lightbox="id"><img src="img/left5.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
-                                    <a href="img/left6.jpg" data-lightbox="id"><img src="img/left6.jpg" alt="img"
-                                            class="img-fluid my-2"></a>
+                        <div class="card shadow-sm card-left2 mb-4">
+                            <div class="card-body">
+                                <h5 class="mb-3 card-title">Sobre <small><a href="#" class="ml-1">Editar</a></small>
+                                </h5>
+                                <p class="card-text"> <i class="fas fa-calendar-week mr-2"></i>
+                                    <a href="#" class="text-decoration-none">Última postagem</a>
+                                </p>
+                                <p class="card-text">
+                                    <i class="fas fa-user-friends mr-2"></i>
+                                    Fez amizade com
+                                    <a href="#" class="text-decoration-none">Fulano</a>,
+                                    <a href="#" class="text-decoration-none">Beltrano</a>, ...
+                                </p>
+                                <p class="card-text"> <i class="far fa-building mr-2"></i><a href="#"
+                                        class="text-decoration-none">Estagiário Front-end</a></p>
+                                <p class="card-text"> <i class="fas fa-home mr-2"></i> Mora em <a href="#"
+                                        class="text-decoration-none">Recife</a></p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm card-left3 mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Imagens<small class="ml-2"><a href="#">Editar </a></small></h5>
+                                <p>
+                                    <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                        data-target="#galleryImages" aria-expanded="false"
+                                        aria-controls="galleryImages" aria-label="Mais">
+                                        Ver mais
+                                    </button>
+                                </p>
+                                <div class="collapse row" id="galleryImages">
+                                    <div class="col-6 p-1">
+                                        <a href="img/left1.jpg" data-lightbox="id"><img src="img/left1.jpg"
+                                                alt="Montanha com pôr-do-sol" class="img-fluid my-2" width="200px"
+                                                height="200px"></a>
+                                        <a href="img/left2.jpg" data-lightbox="id"><img src="img/left2.jpg"
+                                                alt="Pico de uma montanha com neblina" class="img-fluid my-2"
+                                                width="200px" height="200px"></a>
+                                        <a href="img/left3.jpg" data-lightbox="id"><img src="img/left3.jpg"
+                                                alt="Estrada em uma região desértica" class="img-fluid my-2"
+                                                width="200px" height="200px"></a>
+                                    </div>
+                                    <div class="col-6 p-1">
+                                        <a href="img/left4.jpg" data-lightbox="id"><img src="img/left4.jpg"
+                                                alt="Ponte de ferro urbana" class="img-fluid my-2" width="200px"
+                                                height="200px"></a>
+                                        <a href="img/left5.jpg" data-lightbox="id"><img src="img/left5.jpg"
+                                                alt="Prédio cinza pixado" class="img-fluid my-2" width="200px"
+                                                height="200px"></a>
+                                        <a href="img/left6.jpg" data-lightbox="id"><img src="img/left6.jpg"
+                                                alt="Pôr-do-sol de uma cidade" class="img-fluid my-2" width="200px"
+                                                height="200px"></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -242,49 +269,69 @@
                                 <img src="img/avatar-dhg.jpeg" alt="img" width="55px" height="55px"
                                     class="rounded-circle mr-3">
                                 <div class="media-body">
-                                    <h5>Renan Leite</h5>
-                                    <p class="card-text text-justify">Aenean lacinia bibendum nulla sed consectetur.
-                                        Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac
-                                        consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in,
-                                        egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis
-                                        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                                    <div class="row no-gutters mb-3">
-                                        <div class="col-6 p-1 text-center">
-                                            <img src="img/adventure-alps-clouds-2259810.jpg" alt=""
-                                                class="img-fluid mb-2">
-                                            <img src="img/aerial-view-architectural-design-buildings-2228123.jpg" alt=""
-                                                class="img-fluid">
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Renan Leite</h5>
+                                        <small>5min</small>
+                                    </div>
+                                    <p>Fez uma publicação</p>
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                            data-target="#firstPost" aria-expanded="false" aria-controls="firstPost" aria-label="Mais">
+                                            Ler mais...
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="firstPost">
+                                        <p class="card-text text-justify">Aenean lacinia bibendum nulla sed consectetur.
+                                            Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac
+                                            consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis
+                                            in,
+                                            egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum
+                                            sociis
+                                            natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                        </p>
+                                        <div class="row no-gutters mb-3">
+                                            <div class="col-6 p-1 text-center">
+                                                <img src="img/adventure-alps-clouds-2259810.jpg" alt=""
+                                                    class="img-fluid mb-2">
+                                                <img src="img/aerial-view-architectural-design-buildings-2228123.jpg"
+                                                    alt="" class="img-fluid">
+                                            </div>
+                                            <div class="col-6 p-1 text-center">
+                                                <img src="img/celebration-colored-smoke-dark-2297472.jpg" alt=""
+                                                    class="img-fluid mb-2">
+                                                <img src="img/bodybuilding-exercise-fitness-2294361.jpg" alt=""
+                                                    class="img-fluid">
+                                            </div>
                                         </div>
-                                        <div class="col-6 p-1 text-center">
-                                            <img src="img/celebration-colored-smoke-dark-2297472.jpg" alt=""
-                                                class="img-fluid mb-2">
-                                            <img src="img/bodybuilding-exercise-fitness-2294361.jpg" alt=""
-                                                class="img-fluid">
+                                        <div class="media mb-3">
+                                            <img src="img/avatar-dhg.png" alt="img" width="45px" height="45px"
+                                                class="rounded-circle mr-2">
+                                            <div class="media-body">
+                                                <p class="card-text text-justify">Fulano de Tal: Donec id elit non mi
+                                                    porta
+                                                    gravida at eget metus. Vivamus sagittis lacus vel augue laoreet
+                                                    rutrum
+                                                    faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
+                                                    fringilla. Praesent commodo cursus magna, vel scelerisque nisl
+                                                    consectetur et. Sed posuere consectetur est at lobortis.</p>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <img src="img/avatar-mdo.png" alt="img" width="45px" height="45px"
+                                                class="rounded-circle mr-2">
+                                            <div class="media-body">
+                                                <p class="card-text text-justify">Beltrano da Silva: Lorem ipsum dolor
+                                                    sit amet,
+                                                    consectetur adipiscing elit. Fusce dapibus, tellus ac cursus
+                                                    commodo,
+                                                    tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                                                    risus.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="media mb-3">
-                                        <img src="img/avatar-dhg.png" alt="img" width="45px" height="45px"
-                                            class="rounded-circle mr-2">
-                                        <div class="media-body">
-                                            <p class="card-text text-justify">Fulano de Tal: Donec id elit non mi porta
-                                                gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum
-                                                faucibus dolor auctor. Donec ullamcorper nulla non metus auctor
-                                                fringilla. Praesent commodo cursus magna, vel scelerisque nisl
-                                                consectetur et. Sed posuere consectetur est at lobortis.</p>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <img src="img/avatar-mdo.png" alt="img" width="45px" height="45px"
-                                            class="rounded-circle mr-2">
-                                        <div class="media-body">
-                                            <p class="card-text text-justify">Beltrano da Silva: Lorem ipsum dolor sit amet,
-                                                consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo,
-                                                tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                                            </p>
-                                        </div>
-                                    </div>
+
                                 </div>
-                                <small>5min</small>
                             </div>
                         </div>
                         <hr>
@@ -293,14 +340,28 @@
                                 <img src="img/avatar-fat.jpg" alt="img" width="55px" height="55px"
                                     class="rounded-circle mr-3">
                                 <div class="media-body">
-                                    <h5>Caio Mario</h5>
-                                    <p class="text-justify">Donec id elit non mi porta gravida at eget metus. Integer
-                                        posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque
-                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                                        Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor
-                                        sit amet, consectetur adipiscing elit.</p>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Caio Mario</h5>
+                                        <small>14 min</small>
+                                    </div>
+                                    <p>Fez uma publicação</p>
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                            data-target="#secondPost" aria-expanded="false" aria-controls="secondPost" aria-label="Mais">
+                                            Ler mais...
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="secondPost">
+                                        <p class="text-justify">Donec id elit non mi porta gravida at eget metus.
+                                            Integer
+                                            posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis
+                                            natoque
+                                            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum
+                                            dolor
+                                            sit amet, consectetur adipiscing elit.</p>
+                                    </div>
                                 </div>
-                                <small>14 min</small>
                             </div>
                         </div>
                         <hr>
@@ -309,15 +370,26 @@
                                 <img src="img/avatar-mdo.png" alt="img" width="55px" height="55px"
                                     class="rounded-circle mr-3">
                                 <div class="media-body">
-                                    <h5>Silvio Rodrigues</h5>
-                                    <p class="text-justify">Donec ullamcorper nulla non metus auctor fringilla.
-                                        Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam.
-                                        Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem
-                                        malesuada magna mollis euismod. Donec sed odio dui.</p>
-                                    <a href="img/mid5.jpg" data-lightbox="id"><img src="img/mid5.jpg" alt=""
-                                            class="img-fluid shadow-sm img-thumbnail"> </a>
+                                    <div class="d-flex justify-content-between">
+                                        <h5>Silvio Rodrigues</h5>
+                                        <small>20 min</small>
+                                    </div>
+                                    <p>Fez uma publicação</p>
+                                    <p>
+                                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                            data-target="#thirdPost" aria-expanded="false" aria-controls="thirdPost" aria-label="Mais">
+                                            Ler mais...
+                                        </button>
+                                    </p>
+                                    <div class="collapse" id="thirdPost">
+                                        <p class="text-justify">Donec ullamcorper nulla non metus auctor fringilla.
+                                            Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam.
+                                            Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem
+                                            malesuada magna mollis euismod. Donec sed odio dui.</p>
+                                        <a href="img/mid5.jpg" data-lightbox="id"><img src="img/mid5.jpg" alt=""
+                                                class="img-fluid shadow-sm img-thumbnail"> </a>
+                                    </div>
                                 </div>
-                                <small class="text-muted">10 min</small>
                             </div>
                         </div>
                     </div>
@@ -330,7 +402,8 @@
                 <div class="right-column">
                     <div class="card shadow-sm mb-4">
                         <div class="card-body">
-                            <h6 class="card-title ">Curtidas <a href="#" class="ml-1"><small>.Ver todos</small> </a> </h6>
+                            <h6 class="card-title ">Curtidas <a href="#" class="ml-1"><small>.Ver todos</small> </a>
+                            </h6>
                             <div class="row no-gutters d-none d-lg-flex">
                                 <div class="col-6 p-1">
                                     <img src="img/avatar-dhg.png" alt="img" width="80px" height="80px"
@@ -349,7 +422,8 @@
                             </div>
                         </div>
                         <div class="card-footer">
-                            <p class="lead" style="font-size:18px;">Encontre mais pessoas em <a href="#" class="text-decoration-none">Senac</a></p>
+                            <p class="lead" style="font-size:18px;">Encontre mais pessoas em <a href="#"
+                                    class="text-decoration-none">Senac</a></p>
                         </div>
                     </div>
                 </div>
@@ -365,5 +439,4 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
