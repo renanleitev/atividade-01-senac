@@ -8,27 +8,32 @@
     "orientation": "portrait-primary",
     "icons": [
         {
-            "src": "/icons/72.png",
+            "src": "/atividade-01-senac/icons/72.png",
             "type": "image/png",
             "sizes": "72x72"
         },
         {
-            "src": "/icons/128.png",
+            "src": "/atividade-01-senac/icons/128.png",
             "type": "image/png",
             "sizes": "128x128"
         },
         {
-            "src": "/icons/256.png",
+            "src": "/atividade-01-senac/icons/144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/atividade-01-senac/icons/256.png",
             "type": "image/png",
             "sizes": "256x256"
         },
         {
-            "src": "/icons/512.png",
+            "src": "/atividade-01-senac/icons/512.png",
             "type": "image/png",
             "sizes": "512x512"
         },
         {
-            "src": "/icons/1024.png",
+            "src": "/atividade-01-senac/icons/1024.png",
             "type": "image/png",
             "sizes": "1024x1024",
             "purpose": "any maskable"
