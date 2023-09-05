@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="style.css">
     <!-- PWA Support -->
-    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="canonical" href="https://renanleitev.github.io/atividade-01-senac/" />
+    <link rel="manifest" href="/atividade-01-senac/manifest.json">
     <meta name="theme-color" content="#003f7b" />
     <!------------------LIght BOx for Gallery-------------->
     <link rel="stylesheet" href="lightbox.min.css">
@@ -322,13 +323,11 @@
         </div>
         <!-- PWA Support -->
         <script>
-            if ("serviceWorker" in navigator) {
-                window.addEventListener("load", function () {
-                    navigator.serviceWorker
-                        .register("/serviceWorker.js")
-                        .then(res => console.log("service worker registered"))
-                        .catch(err => console.log("service worker not registered", err))
-                })
+            if (navigator.serviceWorker) {
+                navigator.serviceWorker.register(
+                    '/atividade-01-senac/sw.js',
+                    { scope: '/atividade-01-senac/' }
+                )
             }
         </script>
         <!------------------------Light BOx OPtions------------->

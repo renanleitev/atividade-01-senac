@@ -1,7 +1,8 @@
 {
     "name": "MySenac",
     "short_name": "MySenac",
-    "start_url": "/atividade-01-senac",
+    "scope": "/atividade-01-senac/",
+    "start_url": "/atividade-01-senac/",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#003f7b",
