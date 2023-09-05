@@ -1,10 +1,10 @@
 {
     "name": "MySenac",
     "short_name": "MySenac",
-    "start_url": "/",
+    "start_url": "/atividade-01-senac",
     "display": "standalone",
     "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
+    "theme_color": "#003f7b",
     "orientation": "portrait-primary",
     "icons": [
         {
