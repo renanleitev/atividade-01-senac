@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" href="style.css">
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json" />
     <!------------------LIght BOx for Gallery-------------->
     <link rel="stylesheet" href="lightbox.min.css">
     <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
@@ -31,8 +33,6 @@
             <ul class="navbar-nav mr-auto text-capitalize">
                 <li class="nav-item"><a href="index.html" class="text-dark nav-link active">home</a></li>
                 <li class="nav-item"><a href="profile.html" class="text-dark nav-link">perfil</a></li>
-                <li class="nav-item"><a href="#modalview" class="text-dark nav-link" data-toggle="modal">mensagens</a>
-                </li>
                 <li class="nav-item"><a href="notification.html" class="text-dark nav-link">Notificações</a></li>
                 <li class="nav-item"><a href="#" class="text-dark nav-link d-md-none">logout</a></li>
             </ul>
@@ -47,120 +47,6 @@
         </div>
     </nav>
     <!---------------------------------------------Ends navigation------------------------------>
-    <!---------------------------MOdal Section  satrts------------------->
-    <div class="modal fade" id="modalview">
-        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <div class="modal-title h4">Mensagens</div>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Mensagens">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Fulano de Tal e <strong> 1 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Beltrano da Silva e <strong> 3 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Mario Silva and <strong> 5 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Fulano de Tal and <strong> 1 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Beltrano da Silva and <strong> 3 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Mario Silva and <strong> 5 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-dhg.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Fulano de Tal e <strong> 1 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-fat.jpg" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Beltrano da Silva e <strong> 3 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                        <hr class="my-3">
-                        <a href="#" class="text-decoration-none">
-                            <li class="media hover-media">
-                                <img src="img/avatar-mdo.png" alt="img" width="60px" height="60px"
-                                    class="rounded-circle mr-3">
-                                <div class="media-body text-dark">
-                                    <h6 class="media-header">Mario Silva e <strong> 5 outro(s)</strong></h6>
-                                    <p class="media-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                </div>
-                            </li>
-                        </a>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-------------------------------MOdal Ends---------------------------->
     <!-------------------------------------------Start Grids layout for lg-xl-3 columns and (xs-lg 1 columns)--------------------------------->
     <div class="container">
         <div class="row">
@@ -170,7 +56,8 @@
                     <div class="d-flex justify-content-center">
                         <p>
                             <button class="btn btn-primary d-flex flex-row" type="button" data-toggle="collapse"
-                                data-target="#infoProfile" aria-expanded="false" aria-controls="infoProfile" aria-label="Perfil">
+                                data-target="#infoProfile" aria-expanded="false" aria-controls="infoProfile"
+                                aria-label="Perfil">
                                 Perfil de Renan Leite
                             </button>
                         </p>
@@ -184,7 +71,7 @@
                                 <h5 class="card-title">Renan Leite</h5>
                                 <p class="card-text mb-2">Estagiário Front-End</p>
                                 <ul class="list-unstyled nav justify-content-center">
-                                        <li class="nav-item">Amizades <br> <strong><a href="#">12</a></strong></li>
+                                    <li class="nav-item">Amizades <br> <strong><a href="#">12</a></strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -212,8 +99,8 @@
                                 <h5 class="card-title">Imagens<small class="ml-2"><a href="#">Editar </a></small></h5>
                                 <p>
                                     <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                        data-target="#galleryImages" aria-expanded="false"
-                                        aria-controls="galleryImages" aria-label="Mais">
+                                        data-target="#galleryImages" aria-expanded="false" aria-controls="galleryImages"
+                                        aria-label="Mais">
                                         Ver mais
                                     </button>
                                 </p>
@@ -276,7 +163,8 @@
                                     <p>Fez uma publicação</p>
                                     <p>
                                         <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                            data-target="#firstPost" aria-expanded="false" aria-controls="firstPost" aria-label="Mais">
+                                            data-target="#firstPost" aria-expanded="false" aria-controls="firstPost"
+                                            aria-label="Mais">
                                             Ler mais...
                                         </button>
                                     </p>
@@ -347,7 +235,8 @@
                                     <p>Fez uma publicação</p>
                                     <p>
                                         <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                            data-target="#secondPost" aria-expanded="false" aria-controls="secondPost" aria-label="Mais">
+                                            data-target="#secondPost" aria-expanded="false" aria-controls="secondPost"
+                                            aria-label="Mais">
                                             Ler mais...
                                         </button>
                                     </p>
@@ -377,7 +266,8 @@
                                     <p>Fez uma publicação</p>
                                     <p>
                                         <button class="btn btn-primary" type="button" data-toggle="collapse"
-                                            data-target="#thirdPost" aria-expanded="false" aria-controls="thirdPost" aria-label="Mais">
+                                            data-target="#thirdPost" aria-expanded="false" aria-controls="thirdPost"
+                                            aria-label="Mais">
                                             Ler mais...
                                         </button>
                                     </p>
@@ -429,6 +319,17 @@
                 </div>
             </div>
         </div>
+        <!-- PWA Support -->
+        <script>
+            if ("serviceWorker" in navigator) {
+                window.addEventListener("load", function () {
+                    navigator.serviceWorker
+                        .register("/serviceWorker.js")
+                        .then(res => console.log("service worker registered"))
+                        .catch(err => console.log("service worker not registered", err))
+                })
+            }
+        </script>
         <!------------------------Light BOx OPtions------------->
         <script>
             lightbox.option({
@@ -439,4 +340,5 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
