@@ -15,6 +15,7 @@ var VERSION = 'version_00';
 var URLS  = [
     `${GHPATH}/`,
     `${GHPATH}/index.html`,
+    `${GHPATH}/manifest.json`,
     `${GHPATH}/pages/profile.html`,
     `${GHPATH}/pages/notification.html`,
     `${GHPATH}/javascript/lightbox-plus-jquery.min.js`,
